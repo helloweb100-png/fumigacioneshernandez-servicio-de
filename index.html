@@ -2916,6 +2916,48 @@ main section[id] {
   .hero-title {
     font-size: clamp(2.3rem, 12vw, 3rem);
   }
+
+  /* En pantallas muy angostas el nombre completo no cabe en una linea:
+     se quita el tagline y se reduce la fuente para que no se corte con "...". */
+  .brand-tagline {
+    display: none;
+  }
+
+  .brand-name {
+    font-size: 0.82rem;
+  }
+
+  /* Menos aire vertical para que el hero no empuje "ubicacion y horario"
+     debajo del boton flotante de WhatsApp en telefonos bajos (~700px o menos). */
+  .hero-eyebrow {
+    margin-bottom: 8px;
+  }
+
+  .hero-typewriter {
+    margin-top: 8px;
+  }
+
+  .hero-desc {
+    margin-top: 8px;
+  }
+
+  .hero-cta {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .hero-meta {
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .hero-meta-item {
+    font-size: 0.72rem;
+  }
+
+  .hero {
+    padding-bottom: 20px;
+  }
 }
 
 
@@ -3157,7 +3199,7 @@ main section[id] {
     <div class="loader-texture" aria-hidden="true"></div>
     <div class="loader-inner">
       <div class="loader-mark">
-        <img src="logo.jpg" alt="" class="loader-logo">
+        <img src="logo.png" alt="" class="loader-logo">
       </div>
       <div class="loader-rings" aria-hidden="true">
         <span></span><span></span><span></span>
@@ -3173,7 +3215,7 @@ main section[id] {
 <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a href="#inicio" class="brand" aria-label="FUMIGACIONES HERNANDEZ">
-        <span class="brand-mark"><img src="logo.jpg" alt="FUMIGACIONES HERNANDEZ" class="brand-logo"></span>
+        <span class="brand-mark"><img src="logo.png" alt="FUMIGACIONES HERNANDEZ" class="brand-logo"></span>
         <span class="brand-text">
           <span class="brand-name">FUMIGACIONES HERNANDEZ</span>
           <span class="brand-tagline">Fumigaciones para hogar y negocio</span>
@@ -3457,20 +3499,14 @@ main section[id] {
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
-            <img src="img/14.jpg" alt="Sellado de grietas en pared de bodega industrial" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="3" aria-label="Ampliar imagen: Sellado de grietas en pared de bodega industrial">
-              <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
-            </button>
-          </figure>
-          <figure class="gallery-item" data-reveal="media">
             <img src="img/15.jpg" alt="Vista de habitacion despues de tratamiento contra plagas" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="4" aria-label="Ampliar imagen: Vista de habitacion despues de tratamiento contra plagas">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="3" aria-label="Ampliar imagen: Vista de habitacion despues de tratamiento contra plagas">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
           <figure class="gallery-item" data-reveal="media">
             <img src="img/16.jpg" alt="Patio trasero de vivienda recien fumigado" loading="lazy">
-            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="5" aria-label="Ampliar imagen: Patio trasero de vivienda recien fumigado">
+            <button type="button" class="gallery-trigger" data-lightbox-open data-lightbox-index="4" aria-label="Ampliar imagen: Patio trasero de vivienda recien fumigado">
               <svg class="gallery-trigger-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4"/></svg>
             </button>
           </figure>
@@ -3545,7 +3581,7 @@ main section[id] {
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#inicio" class="brand">
-          <span class="brand-mark"><img src="logo.jpg" alt="FUMIGACIONES HERNANDEZ" class="brand-logo"></span>
+          <span class="brand-mark"><img src="logo.png" alt="FUMIGACIONES HERNANDEZ" class="brand-logo"></span>
           <span class="brand-text"><span class="brand-name">FUMIGACIONES HERNANDEZ</span><span class="brand-tagline">Fumigaciones para hogar y negocio</span></span>
         </a>
         <p>Fumigaciones Hernandez elimina todo tipo de plagas en hogares y negocios de Ciudad Madero, Tamaulipas. Servicio rapido, directo y sin complicaciones.</p>
